@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mon Panier</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+    .container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;          /* prendre toute la largeur possible dans max-width */
+    min-height: 100vh;    /* au moins toute la hauteur de la fenêtre */
+    margin: 0;            /* plus besoin de margin auto vertical */
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start;
+    }
+
+    /* Colonne de cartes */
+    .cart-list {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* espace vertical entre les carts */
+    }
+
+    /* Style des cartes */
+    .cart {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .cart h2 {
+      margin-bottom: 20px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .item-details {
+      flex: 1;
+      margin-left: 15px;
+    }
+
+    .item-details h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .item-details p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .quantity-btn {
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .quantity-input {
+      width: 50px;
+      text-align: center;
+    }
+
+    .remove-item {
+      background: none;
+      border: none;
+      color: red;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Résumé à droite */
+    .cart-summary {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+
+    .summary-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .summary-line {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .total {
+      font-size: 20px;
+      font-weight: bold;
+      border-top: 1px solid #ccc;
+      padding-top: 15px;
+      margin-top: 15px;
+    }
+
+    .checkout-button {
+      width: 100%;
+      padding: 15px;
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    .checkout-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Colonne contenant toutes les cartes -->
+    <div class="cart-list">
+
+      <div class="cart">
+        <h2>Votre panier</h2>
+        <div class="cart-item">
+          <img src="../Images/top-view-fish-shrimp-with-copy-space.jpg" alt="Poisson Tilapia" />
+          <div class="item-details">
+            <h3>Poisson Tilapia</h3>
+            <p>Catégorie : Poisson d’eau douce</p>
+            <p>Prix unitaire : 6 900 CFA</p>
+            <div class="actions">
+              <button class="quantity-btn">-</button>
+              <input type="number" value="2" min="1" class="quantity-input" />
+              <button class="quantity-btn">+</button>
+            </div>
+            <p>Total : 13 800 CFA</p>
+          </div>
+          <button class="remove-item">✕</button>
+        </div>
+      </div>
+
+      <div class="cart">
+        <div class="cart-item">
+          <img src="../Images/top-view-fish-shrimp-with-copy-space.jpg" alt="Poisson Tilapia" />
+          <div class="item-details">
+            <h3>Poisson Tilapia</h3>
+            <p>Catégorie : Poisson d’eau douce</p>
+            <p>Prix : 6 900 CFA</p>
+            <div class="actions">
+            <h5> Quantité : 2</h5>
+            </div>
+            <p>Sous-Total : 13 800 CFA</p>
+          </div>
+          <button class="remove-item">✕</button>
+        </div>
+      </div>
+
+      <div class="cart">
+       
+        <div class="cart-item">
+          <img src="../Images/top-view-fish-shrimp-with-copy-space.jpg" alt="Poisson Tilapia" />
+          <div class="item-details">
+            <h3>Poisson Tilapia</h3>
+            <p>Catégorie : Poisson d’eau douce</p>
+            <p>Prix unitaire : 6 900 CFA</p>
+            <div class="actions">
+              <button class="quantity-btn">-</button>
+              <input type="number" value="2" min="1" class="quantity-input" />
+              <button class="quantity-btn">+</button>
+            </div>
+            <p>Total : 13 800 CFA</p>
+          </div>
+          <button class="remove-item">✕</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Résumé à droite -->
+    <div class="cart-summary">
+      <div class="summary-title">Résumé</div>
+      <div class="summary-line">
+        <span>Sous-total</span>
+        <span>13 800 CFA</span>
+      </div>
+      <div class="summary-line">
+        <span>Livraison</span>
+        <span>1 000 CFA</span>
+      </div>
+      <div class="summary-line total">
+        <span>Total</span>
+        <span>14 800 CFA</span>
+      </div>
+      <a href="#" class="checkout-button">Commander</a>
+    </div>
+  </div>
+
+</body>
+</html>

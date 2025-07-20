@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/details.css">
+  <title>Détails du produit</title>
 </head>
 <body>
-    <section class="">
-        <div class="horizontal">
-            <img src="../Images/photorealistic-wild-tuna-day-celebration.jpg" alt="">
-           
-        </div>
-        <div class="vertical">
-                 <div class="top">
-                    <h2 class="NomP">NOM DU PRODUITS<h2>
-                    <h4 class="NomC">categorie : poisssons d'eau douce</h4>
-                    <h3 class="Prix">13 800 CFA </h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                    molestias voluptates vel numquam quam, provident quos possimus ex repudiandae corporis,
-                    blanditiis odit eligendi quae totam repellendus molestiae dolorum voluptas fugiat!</p>
-            
-        </div>
-        <div class="bouton">
-            <input type="button" value="-">
-            <input type="number" name="" id="" value="1">
-            <input type="button" value="+">
-        </div>
+<div class="page-layout">
+  <!-- MENU LATÉRAL -->
+  <aside class="menu">
+    <h3>Catégories</h3>
+    <ul>
+      <li><a href="#">Poissons D'eau Douce</a></li>
+      <li><a href="#">Crustacés Délicieux</a></li>
+      <li><a href="#">Fruits De Mer</a></li>
+      <li><a href="#">Viandes Locales</a></li>
+    </ul>
+  </aside>
 
-            </div>
+
+    <section class="details">
+    <div class="product-container">
+      <div class="image">
+        <img src="../Images/photorealistic-wild-tuna-day-celebration.jpg" alt="Produit">
+      </div>
+      <div class="info">
+        <h2 class="product-name">NOM DU PRODUIT</h2>
+        <h4 class="category">Catégorie : poissons d'eau douce</h4>
+        <h3 class="price">13 800 CFA</h3>
+        <p class="description">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus vitae facilis, explicabo iure architecto pariatur odio tempora perspiciatis consequatur doloremque! Itaque nesciunt commodi, veritatis dolor eos neque animi incidunt.
+         Eius labore et, eligendi ipsum assumenda, ad, asperiores saepe tempora cum rerum fugit itaque culpa deserunt odio mollitia amet voluptates error. Commodi, possimus fuga aut vel nemo voluptates mollitia dolor.
+
+        </p>
+        <div class="actions">
+            <button class="quantity-btn minus">-</button>
+            <input type="number" value="1" min="1" class="quantity-input">
+            <button class="quantity-btn plus">+</button>
+            <button class="add-to-cart">Ajouter au panier</button>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+</div>
+
 </body>
 </html>
