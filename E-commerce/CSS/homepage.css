@@ -57,7 +57,7 @@ input{
     color: white;
     font-size: 30px;
 }
-.icons a :hover{
+.icons a:hover{
     color: #f6ab39;
 }
 .sub-header{
@@ -84,11 +84,48 @@ img-secc img{
     object-fit: cover;
     position: relative;
 }
-content-secc{
-    margin: 0 100px 0 100px;
-}
-content-secc h2{
-    margin: 30px;
+h2{
+    margin: 25px;
     display: flex;
     justify-content: center;
+}
+.content-secc{
+    margin: 0 300px;
+    padding: 0 15px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.content-secc a{
+    flex: 1;
+    height: 40vh;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+.content-secc a:hover{
+    border: 1px solid #1e5f93;
+    box-sizing: border-box;
+}
+.prod{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.prod img{
+    display: flex;
+    height: 100%;
+    object-fit: contain;
+}
+span{
+    font-size: 16px;
+    font-weight: 300;
+}
+p{
+    margin: 0;
+    padding-bottom: 10px;
 }
