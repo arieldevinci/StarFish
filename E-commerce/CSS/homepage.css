@@ -2,7 +2,6 @@ body{
     background-color: white;
     padding: 0;
     margin: 0;
-    height: 500vh;
 }
 nav{
     position: sticky;
@@ -77,12 +76,46 @@ input{
     font-size: 17px;
     font-weight: 600;
 }
+img-secc .bigimg{
+    position: relative;
+}
 img-secc img{
     display: flex;
     height: 80vh;
     width: 100%;
     object-fit: cover;
-    position: relative;
+}
+.textimg{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    top: 0%;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    padding-left: 10%;
+    background-image: linear-gradient(to right, white,transparent);
+}
+.textimg h1{
+    font-size: 5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.textimg span{
+    margin: 10px 0;
+    font-size: x-large;
+}
+.button button{
+    border: transparent;
+    border-radius: 5px;
+    background-color: #1e5f93;
+}
+.button h2{
+    padding: 5px 20px;
+    margin: 0;
+    color: white;
 }
 h2{
     margin: 25px;
@@ -192,7 +225,7 @@ p{
     border: transparent;
     border-radius: 5px;
     background-color: #1e5f93;
-    margin-bottom: 25px;
+    margin-bottom: 75px;
 }
 button h2{
     padding: 5px 25px;
@@ -241,7 +274,7 @@ footer{
     background-color: #3d7db0;
 }
 .postfooter{
-    height: 40vh;
+    height: 25vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
