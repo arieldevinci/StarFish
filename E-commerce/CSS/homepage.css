@@ -2,7 +2,7 @@ body{
     background-color: white;
     padding: 0;
     margin: 0;
-    height: 200vh;
+    height: 500vh;
 }
 nav{
     position: sticky;
@@ -55,7 +55,7 @@ input{
 }
 .icons a{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 .icons a:hover{
     color: #f6ab39;
@@ -128,4 +128,132 @@ span{
 p{
     margin: 0;
     padding-bottom: 10px;
+}
+.produit-secc{
+    margin: 0 300px;
+    padding: 0 15px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.produit{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 40vh;
+    flex: 1;
+    box-sizing: border-box;
+}
+.produit:hover{
+    border: 1px solid #1e5f93;
+    box-sizing: border-box;
+}
+#prod{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.produit a{
+    display: flex;
+    height: 70%;
+    justify-content: center;
+}
+#prod a{
+    background-image: url(../Images/view-fish-with-simple-background-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    font-size: 16px;
+    font-weight: 300;
+}
+p{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.plus{
+    display: flex;
+    margin: 0 300px;
+    border-bottom: 1px solid #eee8e8;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.plus button{
+    position: relative;
+    display: flex;
+    border: transparent;
+    border-radius: 5px;
+    background-color: #1e5f93;
+    margin-bottom: 25px;
+}
+button h2{
+    padding: 5px 25px;
+    margin: 0;
+    color: white;
+}
+h1{
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.raisons{
+    margin: 0 300px 100px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee8e8;
+}
+.carte-raison{
+    display: flex;
+    flex: 1;
+    height: 30vh;
+}
+.trois{
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.trois i{
+    font-size: 25px;
+}
+.trois span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+.prefooter{
+    height: 10vh;
+    background-color: #3d7db0;
+}
+.postfooter{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1e5f93;
+    font-size: 20px;
+}
+.lien{
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+.lien a{
+    text-decoration: none;
+    color: white;
 }
