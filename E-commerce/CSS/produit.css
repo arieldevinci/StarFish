@@ -76,11 +76,6 @@ input{
     font-size: 17px;
     font-weight: 600;
 }
-
-
-
-
-
 footer{
     display: flex;
     flex-direction: column;
