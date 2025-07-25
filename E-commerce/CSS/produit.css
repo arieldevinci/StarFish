@@ -40,7 +40,7 @@ header{
     display: flex;
     align-items: center;
 }
-input{
+.searchbar input{
     padding: 7px 10px;
     width: 600px;
     border-radius: 5px;
@@ -75,6 +75,135 @@ input{
     color: #1e5f93;
     font-size: 17px;
     font-weight: 600;
+}
+section{
+    margin: 40px 0;
+    padding: 0 200px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.visuel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    flex: 2;
+}
+.principal{
+    display: flex;
+    height: 80%;
+}
+.principal img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #1e5f93;
+    border-radius: 5px;
+}
+.secondaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.secimg{
+    display: flex;
+    flex: 1;
+    height: 100%;
+    border: 1px solid #1e5f93;
+    border-radius: 5px;
+}
+.secimg img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.textuel{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: baseline;
+}
+.produit, .status{
+    border-bottom: 1px solid #e9ebee;
+}
+.textuel .produit h2, .textuel .status .choix{
+    margin-bottom: 25px;
+}
+.status p{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.choix{
+    display: flex;
+    justify-content: spce-between;
+    align-items: center;
+    gap: 20px;
+}
+.choix input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b1B2B6;
+}
+.choix button{
+    border: transparent;
+    border-radius: 5px;
+    background-color: #1e5f93;
+}
+.choix h2{
+    padding: 5px 20px;
+    margin: 0;
+    color: white;
+}
+content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 200px 40px 200px;
+}
+.content-secc{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.content-secc a{
+    flex: 1;
+    height: 40vh;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+.content-secc a:hover{
+    border: 1px solid #1e5f93;
+    box-sizing: border-box;
+}
+.prod{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.prod img{
+    display: flex;
+    height: 100%;
+    object-fit: contain;
+}
+.infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    font-size: 16px;
+    font-weight: 300;
 }
 footer{
     display: flex;
